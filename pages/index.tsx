@@ -1,10 +1,16 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+import Background from '../components/Background'
+import Widget from '../components/Widget'
+import FoundationTokens from '../foundation-tokens.json'
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <Background>
+      <Widget>
+        <h1>{FoundationTokens.title}</h1>
+        <h2>{FoundationTokens.titleSecondary}</h2>
+        <input></input><br/>
+        <button>ENTRAR</button>
+      </Widget>
+    </Background>
+  )
 }
